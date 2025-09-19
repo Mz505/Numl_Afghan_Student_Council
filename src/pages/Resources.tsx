@@ -54,7 +54,7 @@ const Resources = () => {
             title: 'ICECT 2025 - International Conference on Emerging Computing Technologies',
             date: '2025-11-13',
             description: 'International Conference featuring latest research in computing and emerging technologies',
-            link: 'https://numl.edu.pk/events',
+            link: 'https://numl.edu.pk/events/all',
             isHighlighted: true,
             venue: 'NUML Main Campus',
           },
@@ -63,7 +63,7 @@ const Resources = () => {
             title: 'NCCAI-2025 - National Conference on Computing and AI',
             date: '2025-05-20',
             description: 'National Conference on Computing and Artificial Intelligence with industry experts',
-            link: 'https://numl.edu.pk/events',
+            link: 'https://numl.edu.pk/events/all',
             isHighlighted: true,
             venue: 'NUML Conference Hall',
           },
@@ -72,7 +72,7 @@ const Resources = () => {
             title: 'Pen, Frame, Stage... Creative Arts Festival',
             date: '2025-05-06',
             description: 'Annual creative arts and literary festival showcasing student talents in writing, visual arts, and performing arts',
-            link: 'https://numl.edu.pk/events',
+            link: 'https://numl.edu.pk/events/all',
             isHighlighted: true,
             venue: 'NUML Arts Center',
           },
@@ -815,7 +815,7 @@ Thank you!`;
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-2xl font-bold text-white">NUML Highlighted Events</h3>
               <a
-                href="https://numl.edu.pk/events"
+                href="https://numl.edu.pk/events/all"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors"

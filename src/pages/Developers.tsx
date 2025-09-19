@@ -8,6 +8,16 @@ import bashirImage from '../assets/bashir.jpeg';
 import mz from '../assets/vip/mz.jpeg';
 
 const Developers = () => {
+  // Helper function to create Gmail compose URL
+  const createGmailLink = (email: string, subject?: string, body?: string) => {
+    const params = new URLSearchParams({
+      to: email,
+      ...(subject && { su: subject }),
+      ...(body && { body: body })
+    });
+    return `https://mail.google.com/mail/?view=cm&fs=1&${params.toString()}`;
+  };
+
   const developers = [
     {
       id: 1,
@@ -23,7 +33,7 @@ const Developers = () => {
         { name: 'Java', level: 75 }
       ],
       github: 'https://github.com/mz505',
-      linkedin: 'https://linkedin.com/in/mashalzirak',
+      linkedin: 'https://www.linkedin.com/in/mashal-zerak-b62947257/',
       portfolio: 'https://68ba969fb0ec0e5b98607983--portfoliomz505.netlify.app/',
       email: 'mzerak25@gmail.com'
     },
@@ -98,12 +108,12 @@ const Developers = () => {
       'Cloud Solutions'
     ],
     socialMedia: {
-      github: 'https://github.com/hopepath-org',
-      linkedin: 'https://linkedin.com/company/hopepath',
-      twitter: 'https://twitter.com/hopepath_tech',
-      instagram: 'https://instagram.com/hopepath.solutions',
-      facebook: 'https://facebook.com/hopepath.tech',
-      website: 'https://hopepath.tech'
+      github: null,
+      linkedin: null,
+      twitter: null,
+      instagram: null,
+      facebook: 'https://www.facebook.com/people/Hopepath-Technology/',
+      website: 'https://hopepath.netlify.app'
     }
   };
 
@@ -298,7 +308,9 @@ const Developers = () => {
                   {/* Contact Icons */}
                   <div className="flex justify-center space-x-3 pt-3 border-t border-gray-700">
                     <motion.a
-                      href={`mailto:${developer.email}`}
+                      href={createGmailLink(developer.email)}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="p-2 bg-gradient-to-r from-pink-500 to-blue-600 rounded-lg hover:shadow-lg hover:shadow-pink-500/25 transition-all duration-300"
                       whileHover={{ scale: 1.1 }}
                       whileTap={{ scale: 0.95 }}
@@ -389,7 +401,9 @@ const Developers = () => {
               <Globe size={24} />
             </a>
             <a
-              href="mailto:contact@hopepath.tech"
+              href={createGmailLink("contact@hopepath.tech")}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gray-900/50 backdrop-blur-sm border border-gray-700/50 p-3 rounded-full hover:shadow-xl hover:shadow-pink-500/25 transition-all duration-300"
             >
               <Mail size={24} />
@@ -410,7 +424,9 @@ const Developers = () => {
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="w-5 h-5 text-pink-400" />
                   <a
-                    href="mailto:hopepathtechnology@gmail.com"
+                    href={createGmailLink("hopepathtechnology@gmail.com")}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-300 hover:text-pink-400 transition-colors"
                   >
                     hopepathtechnology@gmail.com

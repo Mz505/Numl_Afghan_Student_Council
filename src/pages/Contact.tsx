@@ -137,13 +137,13 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold text-white mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.facebook.com/share/16VVPAWHk3/?mibextid=wwXIfr"
                     className="p-3 bg-blue-600 rounded-full hover:bg-blue-500 transition-colors duration-300"
                   >
                     <Facebook className="h-6 w-6 text-white" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/mashalzirak__01/"
                     className="p-3 bg-pink-600 rounded-full hover:bg-pink-500 transition-colors duration-300"
                   >
                     <Instagram className="h-6 w-6 text-white" />
@@ -339,7 +339,7 @@ const Contact = () => {
             className="h-96 bg-gray-800/50 backdrop-blur-lg rounded-2xl border border-gray-700/50 overflow-hidden"
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.8967737853677!2d73.0697478!3d33.6459422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sNational%20University%20of%20Modern%20Languages!5e0!3m2!1sen!2s!4v1644589420665!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3321.8967737853677!2d73.0697478!3d33.6459422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbfd07891722f%3A0x6059515c3bdb02b6!2sNational%20University%20of%20Modern%20Languages%2C%20Sector%20H-9%2C%20Islamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1644589420665!5m2!1sen!2s&q=National+University+of+Modern+Languages+Islamabad&z=16"
               width="100%"
               height="100%"
               style={{ border: 0 }}

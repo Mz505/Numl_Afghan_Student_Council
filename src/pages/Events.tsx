@@ -12,96 +12,152 @@ const Events = () => {
   const upcomingEvents = [
     {
       id: 1,
-      title: 'ICECT 2025 - International Conference',
-      date: '2025-11-13',
-      time: '2:00 PM',
+      title: 'ICECT 2025 - International Conference on Emerging Computing Technologies',
+      date: 'November 2025',
+      time: 'To be announced',
       location: 'NUML Conference Hall',
-      description: 'International Conference on Emerging Computing Technologies. Afghan students are encouraged to participate and present research.',
+      description: 'International Conference featuring latest research in computing and emerging technologies. A platform for academic excellence and research presentation.',
       image: 'https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600',
-      attendees: 150,
+      attendees: 'All Students',
+      link: 'https://numl.edu.pk/events/all',
     },
     {
       id: 2,
-      title: 'NCCAI-2025 - AI Conference',
-      date: '2025-05-20',
-      time: '6:00 PM',
+      title: 'NCCAI-2025 - National Conference on Computing and AI',
+      date: 'May 2025',
+      time: 'To be announced',
       location: 'NUML Main Campus',
-      description: 'National Conference on Computing and Artificial Intelligence. Great opportunity for Afghan CS students to showcase projects.',
+      description: 'National Conference on Computing and Artificial Intelligence with industry experts. Featuring workshops, seminars, and networking opportunities.',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
-      attendees: 300,
+      attendees: 'All Students',
+      link: 'https://numl.edu.pk/events/all',
     },
     {
       id: 3,
-      title: 'Pen, Frame, Stage 2025',
-      date: '2025-05-06',
-      time: '3:00 PM',
+      title: 'Pen, Frame, Stage... Creative Arts Festival',
+      date: 'May 2025',
+      time: 'To be announced',
       location: 'NUML Arts Center',
-      description: 'Creative arts festival featuring writing, photography, and theatrical performances. Afghan students can showcase their cultural talents.',
+      description: 'Annual creative arts and literary festival showcasing student talents in writing, visual arts, and performing arts. A celebration of creativity and expression.',
       image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600',
-      attendees: 80,
+      attendees: 'All Students',
+      link: 'https://numl.edu.pk/events/all',
     },
     {
       id: 4,
-      title: 'Afghan Student Orientation',
-      date: '2025-09-15',
-      time: '10:00 AM',
+      title: 'Afghan Student Orientation Program',
+      date: 'September 2025',
+      time: 'To be announced',
       location: 'Main Auditorium, NUML',
-      description: 'Annual orientation session for new Afghan students covering academic procedures, hostel information, and support services.',
+      description: 'Comprehensive orientation session for new Afghan students covering academic procedures, hostel information, campus facilities, and support services.',
       image: 'https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=600',
-      attendees: 200,
+      attendees: 'All Students',
+      link: 'https://numl.edu.pk/events/all',
     },
     {
       id: 5,
-      title: 'Cultural Exhibition',
-      date: 'Will be shared ',
-      time: 'undefined yet',
+      title: 'Afghan Cultural Heritage Festival',
+      date: 'To be announced',
+      time: 'To be announced',
       location: 'Student Center Hall',
-      description: 'Celebrating Nowruz and Afghan culture with traditional music, poetry, and cuisine. Join us for an evening of cultural appreciation.',
+      description: 'Celebrating Afghan culture and heritage with traditional music, poetry, cuisine, and cultural exhibitions. A showcase of rich Afghan traditions.',
       image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600',
-      attendees: 250,
+      attendees: 'All Students',
+      link: 'https://numl.edu.pk/events/all',
+    },
+    {
+      id: 6,
+      title: 'NUML Research Symposium',
+      date: 'To be announced',
+      time: 'To be announced',
+      location: 'NUML Research Center',
+      description: 'Annual research symposium featuring student and faculty research presentations across various disciplines. Opportunity for academic collaboration.',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
+      attendees: 'All Students',
+      link: 'https://numl.edu.pk/events/all',
     },
   ];
 
   const pastEvents = [
     {
       id: 4,
-      title: 'Graduation ceremony',
-      date: '2025-08-21',
-      time: '4:00 PM',
-      location: 'Campus Grounds',
-      description: 'Graduation Ceremony of Student at NUML of year 2023,2024,2025 only Afghan students.',
+      title: 'NUML Graduation Ceremony',
+      date: 'August 2024',
+      time: 'Afternoon ceremony',
+      location: 'NUML Campus Grounds',
+      description: 'Annual graduation ceremony celebrating academic achievements of NUML students across all programs and departments.',
       image: Group_photo,
-      attendees: 250,
+      attendees: 'All Students',
     },
     {
       id: 5,
-      title: 'Culture Exhibition',
-      date: '2025-03-20',
-      time: '10:00 AM',
-      location: 'Ghazali Ground',
-      description: 'A Rich Afghan Culture Exhibition',
+      title: 'Afghan Cultural Heritage Exhibition',
+      date: 'March 2024',
+      time: 'Full day event',
+      location: 'Ghazali Ground, NUML',
+      description: 'A comprehensive exhibition showcasing the rich cultural heritage of Afghanistan with traditional arts, crafts, and performances.',
       image: spring2,
-      attendees: "17000 students + Guest",
+      attendees: 'All Students',
     },
-    , {
+    {
       id: 6,
-      title: 'Meeting Ambassador',
-      date: '2025-03-10',
-      time: '2:00 PM',
+      title: 'Afghan Embassy Coordination Meeting',
+      date: 'March 2024',
+      time: 'Afternoon session',
       location: 'Afghan Embassy Islamabad',
-      description: 'Discussion of upcoming events and financial support.',
+      description: 'Strategic coordination meeting discussing student support initiatives, upcoming events, and educational collaboration programs.',
       image: embassay,
-      attendees: "Afghan council Members",
+      attendees: 'All Students',
     },
     {
       id: 7,
-      title: 'Meeting With NUML Rector',
-      date: '2021-11-20',
-      time: '10:00 AM',
-      location: 'NUML Auditorium',
-      description: 'Discussion of issues ',
+      title: 'NUML Rector Student Forum',
+      date: 'November 2021',
+      time: 'Morning session',
+      location: 'NUML Main Auditorium',
+      description: 'Interactive forum with NUML Rector addressing student concerns, academic policies, and institutional development initiatives.',
       image: meetRector,
-      attendees: "All Afghan students",
+      attendees: 'All Students',
+    },
+    {
+      id: 8,
+      title: 'NUML Cultural Week 2024',
+      date: 'March 2024',
+      time: 'Multiple sessions',
+      location: 'NUML Main Campus',
+      description: 'A week-long celebration of diverse cultures including Afghan heritage, featuring traditional performances, exhibitions, and cultural exchange programs.',
+      image: 'https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600',
+      attendees: 'All Students',
+    },
+    {
+      id: 9,
+      title: 'Academic Excellence Awards 2024',
+      date: 'February 2024',
+      time: 'Evening ceremony',
+      location: 'Main Auditorium',
+      description: 'Annual ceremony recognizing outstanding academic achievements of students across all departments and programs.',
+      image: 'https://images.pexels.com/photos/1205651/pexels-photo-1205651.jpeg?auto=compress&cs=tinysrgb&w=600',
+      attendees: 'All Students',
+    },
+    {
+      id: 10,
+      title: 'International Students Welcome Event',
+      date: 'January 2024',
+      time: 'Afternoon session',
+      location: 'Student Center',
+      description: 'Networking and orientation event for international students to share experiences, build connections, and learn about campus resources.',
+      image: 'https://images.pexels.com/photos/1181533/pexels-photo-1181533.jpeg?auto=compress&cs=tinysrgb&w=600',
+      attendees: 'All Students',
+    },
+    {
+      id: 11,
+      title: 'Annual Research Symposium 2023',
+      date: 'December 2023',
+      time: 'Full day event',
+      location: 'NUML Research Center',
+      description: 'Students and faculty presented their research projects across various disciplines, showcasing innovative work and academic excellence.',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
+      attendees: 'All Students',
     }
   ];
 
@@ -231,10 +287,21 @@ const Events = () => {
                     {event.description}
                   </p>
 
-                  {activeTab === 'upcoming' && (
-                    <button className="w-full px-4 py-2 bg-gradient-to-r from-green-500 to-blue-500 rounded-lg text-white font-medium hover:shadow-lg hover:shadow-green-500/25 transition-all duration-300">
-                      Register Now
-                    </button>
+                  {/* Add link button for upcoming events */}
+                  {activeTab === 'upcoming' && event.link && (
+                    <div className="pt-4">
+                      <a
+                        href={event.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center w-full px-4 py-2 bg-gradient-to-r from-green-500 to-blue-500 text-white font-medium rounded-lg hover:from-green-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105"
+                      >
+                        View on NUML Events
+                        <svg className="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    </div>
                   )}
                 </div>
               </motion.div>
