@@ -1,39 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Search, Globe, Mail, Calendar, Award } from 'lucide-react';
-import mashal from '../assets/Mashalzerak.jpeg';
-import bashir from '../assets/bashir.jpeg';
-import khyber from '../assets/khyber2.jpg';
-import osama from '../assets/osama.jpeg';
-import sher from '../assets/gr sher.jpg';
-import husain from '../assets/gr hussain.jpg';
-import qadeer from '../assets/qadeer.jpeg';
-import subhan from '../assets/gr subhan.jpg';
-import majid from '../assets/gr majid.jpg';
-import nasrat from '../assets/gr_nasrat.jpg';
+import LazyImage from '../components/LazyImage';
 
 const GraduatedStudents = () => {
   const [searchYear, setSearchYear] = useState('');
   
-  const graduatedStudents = [
+  // Dynamic image loading function
+  const getImagePath = (imageName: string) => {
+    try {
+      return new URL(`../assets/${imageName}`, import.meta.url).href;
+    } catch {
+      return `src/assets/${imageName}`;
+    }
+  };
+  
+  const graduatedStudents = useMemo(() => [
     {
       id: 1,
       name: 'Mashal Zerak',
       graduationYear: 2025,
       degree: 'BS Computer Science ',
-      image: mashal,
+      image: getImagePath('Mashalzerak.jpeg'),
       bio: 'Currently working as a Full Stack Web developer.',
       achievements: ['Dean\'s List', 'Tech Quiz winning Award', 'Leadership Excellence in Event Management'],
       portfolio: 'https://68ba969fb0ec0e5b98607983--portfoliomz505.netlify.app/',
       email: 'mzerak25@gmail.com',
-      vision: 'To use technology to create opportunities, solve real problems, and make a positive impact on people’s lives.',
+      vision: 'To use technology to create opportunities, solve real problems, and make a positive impact on people\'s lives.',
     },
     {
       id: 2,
       name: 'Khyber Kamawal',
       graduationYear: 2025,
       degree: 'Bachelor of Computer Science',
-      image: khyber,
+      image: getImagePath('khyber.jpeg'),
       bio: 'full stack developer.',
       achievements: ['Best tech solution award', 'Best Final Year Project', 'Tech Innovation Award'],
       portfolio: 'https://khyberportfolio.netlify.app/',
@@ -43,12 +43,12 @@ const GraduatedStudents = () => {
     {
       id: 3,
       name: 'Abdul Qadeer Shinwari',
-      graduationYear: 202,
+      graduationYear: 2025,
       degree: 'BS Computer Science ',
-      image: qadeer,
+      image: getImagePath('qadeer.jpeg'),
       bio: 'Currently work as IT Technician at Akramzada international.',
       achievements: ['Research Excellence Award','Outstanding Graduate'],
-      portfolio: '',
+      portfolio: undefined,
       email: 'aqsafghan@gmail.com',
       vision: 'To bring technology to Afghanistan and help solve its challenges.',
     },
@@ -57,11 +57,11 @@ const GraduatedStudents = () => {
       name: 'Abdul Bashir Aryan',
       graduationYear: 2025,
       degree: 'Bachelor of Software Engineering',
-      image: bashir,
+      image: getImagePath('bashir.jpeg'),
       bio: 'Currently handling the HopePath tech solution org',
       achievements: ['Media Excellence Award', 'Best Documentary', 'Student Journalist of the Year'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To use his software development skill and create innovative tech solution to help Afghanistan.',
     },
     {
@@ -69,11 +69,11 @@ const GraduatedStudents = () => {
       name: 'Osama Lalzai',
       graduationYear: 2024,
       degree: 'BBA',
-      image: osama,
+      image: getImagePath('osama.jpeg'),
       bio: 'Educational consultant and founder of an online learning platform for Afghan students.',
       achievements: ['Teaching Excellence Award', 'Innovation in Education', 'Community Impact Award'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To make quality education accessible to all Afghan children.',
     },
 
@@ -82,11 +82,11 @@ const GraduatedStudents = () => {
       name: 'Subhanullah Danish',
       graduationYear: 2024,
       degree: 'Bachelor of Computer Science ',
-      image: subhan,
+      image: getImagePath('gr subhan.jpg'),
       bio: 'working as freelancer doing projects online',
       achievements: ['Engineering Excellence', 'Best Final Year Project', 'Leadership Award'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To contribute to the building of Afghanistan\'s Tech infrastructure.',
     },
     {
@@ -94,11 +94,11 @@ const GraduatedStudents = () => {
       name: ' Sheer Mohammad Poya',
       graduationYear: 2025,
       degree: 'Bachelor of Software engineering ',
-      image: sher,
+      image: getImagePath('gr sher.jpg'),
       bio: 'working as freelancer doing projects online',
       achievements: ['Engineering Excellence', 'Best Final Year Project', 'Leadership Award'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To contribute to the building of Afghanistan\'s Tech infrastructure.',
     },
     {
@@ -106,39 +106,39 @@ const GraduatedStudents = () => {
       name: ' Husain Rezazada',
       graduationYear: 2025,
       degree: 'Bachelor of Software engineering ',
-      image: husain,
+      image: getImagePath('gr hussain.jpg'),
       bio: 'working as freelancer doing projects online',
       achievements: ['Engineering Excellence', 'Best Final Year Project', 'Leadership Award'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To contribute to the building of Afghanistan\'s Tech infrastructure.',
     },
     {
-      id: 7,
+      id: 9,
       name: ' Nasrat',
       graduationYear: 2025,
       degree: 'Bachelor of Software engineering ',
-      image: nasrat,
+      image: getImagePath('gr_nasrat.jpg'),
       bio: 'working as freelancer doing projects online',
       achievements: ['Engineering Excellence', 'Best Final Year Project', 'Leadership Award'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To contribute to the building of Afghanistan\'s Tech infrastructure.',
     },
-        {
-      id: 5,
+    {
+      id: 10,
       name: 'Majid Tareen',
       graduationYear: 2024,
       degree: 'BS psychology',
-      image: majid,
+      image: getImagePath('gr majid.jpg'),
       bio: 'Educational consultant  for Afghan students.',
       achievements: ['Teaching Excellence Award', 'Innovation in Education', 'Community Impact Award'],
-      portfolio: null,
-      email: null,
+      portfolio: undefined,
+      email: undefined,
       vision: 'To make quality education accessible to all Afghan children.',
     },
     
-  ];
+  ], []);
 
   const years = [...new Set(graduatedStudents.map(student => student.graduationYear))].sort((a, b) => b - a);
   
@@ -226,11 +226,13 @@ const GraduatedStudents = () => {
                 whileHover={{ scale: 1.02 }}
                 className="bg-gray-800/50 backdrop-blur-lg rounded-2xl overflow-hidden border border-gray-700/50 hover:border-green-500/50 transition-all duration-300"
               >
-                <img
-                  src={student.image}
-                  alt={student.name}
-                  className="w-full h-64 object-cover object-top"
-                />
+                <LazyImage
+                   src={student.image}
+                   alt={student.name}
+                   className="w-full h-64 object-cover object-top"
+                   priority={index < 3}
+                   responsive={true}
+                 />
                 
                 <div className="p-6 space-y-4">
                   <div className="flex items-center justify-between">
@@ -270,23 +272,37 @@ const GraduatedStudents = () => {
                   </div>
                   
                   <div className="flex items-center justify-between pt-4 border-t border-gray-700">
-                    <a
-                      href={`mailto:${student.email}`}
-                      className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors"
-                    >
-                      <Mail className="h-4 w-4" />
-                      <span className="text-sm">Contact</span>
-                    </a>
-                    <a
-                      href={student.portfolio}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors"
-                    >
-                      <Globe className="h-4 w-4" />
-                      <span className="text-sm">Portfolio</span>
-                    </a>
-                  </div>
+                     {student.email ? (
+                       <a
+                         href={`mailto:${student.email}`}
+                         className="flex items-center space-x-2 text-blue-400 hover:text-blue-300 transition-colors"
+                       >
+                         <Mail className="h-4 w-4" />
+                         <span className="text-sm">Contact</span>
+                       </a>
+                     ) : (
+                       <span className="flex items-center space-x-2 text-gray-500">
+                         <Mail className="h-4 w-4" />
+                         <span className="text-sm">No Contact</span>
+                       </span>
+                     )}
+                     {student.portfolio ? (
+                       <a
+                         href={student.portfolio}
+                         target="_blank"
+                         rel="noopener noreferrer"
+                         className="flex items-center space-x-2 text-pink-400 hover:text-pink-300 transition-colors"
+                       >
+                         <Globe className="h-4 w-4" />
+                         <span className="text-sm">Portfolio</span>
+                       </a>
+                     ) : (
+                       <span className="flex items-center space-x-2 text-gray-500">
+                         <Globe className="h-4 w-4" />
+                         <span className="text-sm">No Portfolio</span>
+                       </span>
+                     )}
+                   </div>
                 </div>
               </motion.div>
             ))}

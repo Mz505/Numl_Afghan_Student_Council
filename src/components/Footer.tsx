@@ -40,13 +40,13 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold text-pink-400">Quick Links</h3>
             <div className="space-y-2">
-              <a href="/resources" className="block text-sm hover:text-blue-400 transition-colors">
+              <a href="/Resources" className="block text-sm hover:text-blue-400 transition-colors">
                 Student Resources
               </a>
-              <a href="/events" className="block text-sm hover:text-blue-400 transition-colors">
+              <a href="/Events" className="block text-sm hover:text-blue-400 transition-colors">
                 Upcoming Events
               </a>
-              <a href="/graduated-students" className="block text-sm hover:text-blue-400 transition-colors">
+              <a href="/GraduatedStudents" className="block text-sm hover:text-blue-400 transition-colors">
                 Alumni Network
               </a>
             </div>
@@ -62,13 +62,14 @@ const Footer = () => {
             <h3 className="text-xl font-bold text-pink-400">Follow Us</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/share/16VVPAWHk3/?mibextid=wwXIfr"
+
                 className="p-2 bg-blue-600 rounded-full hover:bg-blue-500 transition-colors duration-300"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/mashalzirak__01/"
                 className="p-2 bg-pink-600 rounded-full hover:bg-pink-500 transition-colors duration-300"
               >
                 <Instagram className="h-5 w-5" />

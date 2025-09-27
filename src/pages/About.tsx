@@ -4,6 +4,11 @@ import { Users, Target, Award, Heart } from 'lucide-react';
 import qudrat from '../assets/Qurdrat.jpeg';
 import bashir from '../assets/bashir.jpeg';
 // import sidiqaAmani from '../assets/sidiqaAmani.jpeg';
+import sidiqa from '../assets/sidiqa_amani.jpeg';
+import aziz from '../assets/Azizullah.png';
+import saidhassan from '../assets/siad_hassan.png';
+import esmat from '../assets/esmat.png';
+
 
 const About = () => {
   const councilMembers = [
@@ -16,19 +21,19 @@ const About = () => {
     {
       name: 'Said Hassan Bahader',
       role: 'Vice President',
-      image: 'https://images.pexels.com/photos/3785077/pexels-photo-3785077.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: saidhassan,
       bio: 'Coordinating academic support and community outreach programs for Afghan students.',
     },
     {
       name: 'Easmat',
       role: 'Secretary',
-      image: 'https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: esmat,
       bio: 'Managing communications and organizing council activities.',
     },
     {
       name: 'Aziz Ullah Hazrati',
       role: 'Cultural Secretary',
-      image: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: aziz,
       bio: 'Organizing cultural events and preserving Afghan traditions at NUML.',
     },
     {
@@ -40,7 +45,7 @@ const About = () => {
     {
       name: 'Sidiqa Amani',
       role: 'Girl Representative (PhD Scholar)',
-      image: 'https://images.pexels.com/photos/3785079/pexels-photo-3785079.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: sidiqa,
       bio: 'Representing female Afghan students and advocating for their academic needs.',
     },
   ];
