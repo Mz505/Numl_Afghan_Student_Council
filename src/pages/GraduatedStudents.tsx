@@ -24,7 +24,7 @@ const GraduatedStudents = () => {
       image: getImagePath('Mashalzerak.jpeg'),
       bio: 'Currently working as a Full Stack Web developer.',
       achievements: ['Dean\'s List', 'Tech Quiz winning Award', 'Leadership Excellence in Event Management'],
-      portfolio: 'https://68ba969fb0ec0e5b98607983--portfoliomz505.netlify.app/',
+      portfolio: 'https://mashalzerak.netlify.app/',
       email: 'mzerak25@gmail.com',
       vision: 'To use technology to create opportunities, solve real problems, and make a positive impact on people\'s lives.',
     },
