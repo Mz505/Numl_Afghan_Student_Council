@@ -34,7 +34,7 @@ const Developers = () => {
       ],
       github: 'https://github.com/mz505',
       linkedin: 'https://www.linkedin.com/in/mashal-zerak-b62947257/',
-      portfolio: 'https://68ba969fb0ec0e5b98607983--portfoliomz505.netlify.app/',
+      portfolio: 'https://mashalzerak.netlify.app/',
       email: 'mzerak25@gmail.com'
     },
     {
